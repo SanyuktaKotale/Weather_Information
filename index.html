@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <!-- Left Section -->
+        <div class="left">
+            <h1>Weather Information Website</h1>
+
+            <div class="search-box">
+                <input type="text" id="city" placeholder="Enter city name">
+                <button onclick="getWeather()">Search</button>
+            </div>
+
+            <!-- Error Message -->
+            <p id="errorMsg" class="error"></p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right">
+            <h2 id="cityName">Search for a city</h2>
+
+            <div class="weather-details">
+                <div class="box">
+                    <p class="label">Temperature</p>
+                    <p id="temp">--</p>
+                </div>
+
+                <div class="box">
+                    <p class="label">Humidity</p>
+                    <p id="humidity">--</p>
+                </div>
+
+                <div class="box">
+                    <p class="label">Condition</p>
+                    <p id="condition">--</p>
+                </div>
+            </div>
+
+            <img id="icon" src="" alt="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
